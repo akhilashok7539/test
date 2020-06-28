@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="card" *ngFor="let results of results" style="margin-bottom: 85px;">
+    <div class="card-title">
+        <h6>Covid 19  Status  </h6>
+     
+
+        <div class="card" style=" border: none;
+        background: #fed7d7;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);">
+            <p style="text-align: center;font-weight: bold; color: #e53e3e;">Confirmed</p>
+            <p style="text-align: center;font-weight: bold; color: #e53e3e;">{{results.totalConfirmed}}</p>
+
+        </div>
+        <div class="card" style=" border: none;   background: #f0fff4; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);">
+            <p style="text-align: center;font-weight: bold; color: #38a169;">Recovered</p>
+            <p style="text-align: center;font-weight: bold; color: #38a169;">{{results.totalDeaths}}</p>
+
+        </div>
+        <div class="card" style="    background: #edf2f7; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); border: none;">
+            <p style="text-align: center;font-weight: bold; color: #718096;">Deaths</p>
+            <p style="text-align: center;font-weight: bold; color: #718096;">{{results.totalRecovered}}</p>
+
+        </div>
+        <div class="card" style="    background: #f7c13473; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); border: none;">
+            <p style="text-align: center;font-weight: bold; color: #daac2a;">Active Cases</p>
+            <p style="text-align: center;font-weight: bold; color: #daac2a;">{{results.totalRecovered}}</p>
+
+        </div>
+       </div>
+</div>
+<app-navigation></app-navigation>
